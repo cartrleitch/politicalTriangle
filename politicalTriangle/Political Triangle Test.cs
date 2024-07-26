@@ -12,6 +12,7 @@ namespace politicalTriangle
 {
     public partial class Form1 : Form
     {
+        private Point location = Point.Empty;
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +21,6 @@ namespace politicalTriangle
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             label1.Text = "Banana";
-            Point location = Point.Empty;
             location.X = 250;
             location.Y = 250;
             userPolitics.Location = location;
@@ -29,7 +29,6 @@ namespace politicalTriangle
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             label1.Text = "Orange";
-            Point location = Point.Empty;
             location.X = 500;
             location.Y = 500;
             userPolitics.Location = location;
