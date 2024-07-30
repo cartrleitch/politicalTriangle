@@ -20,9 +20,10 @@ namespace politicalTriangle
         {
             InitializeComponent();
             location = userPolitics.Location;
+            Console.WriteLine(location.X + " " + location.Y + "\n");
         }
 
-        // communism = 560, 278, absolutism = 806, 422, individualism = 805, 137
+        // communism = 560, 278, absolutism = 806, 422, individualism = 806, 137
         // left = communism, up = individualism, and down = abolutismm and right = darwinism/anti-egalitarian.
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -32,8 +33,8 @@ namespace politicalTriangle
             location.X = 1088;
             location.Y = 447;*/
         }
-       private void button1_Click(object sender, EventArgs e)
-        {  
+        private void button1_Click(object sender, EventArgs e)
+        {
             foreach (Control control in flowLayoutPanel1.Controls)
             {
                 if (control is GroupBox)
@@ -57,8 +58,44 @@ namespace politicalTriangle
             location.X += selectedXVal;
             location.Y += selectedYVal;
             Console.WriteLine(selectedXVal + " " + selectedYVal + "\n");
-            userPolitics.Location = location;
-        } 
+            if (location.X <= 806 && location.X >= 560 && location.Y <= (0.5853 * location.X - 50) && location.Y >= (-0.5732 * location.X + 600))
+            {
+                userPolitics.Location = location;
+            }
+            else if (location.X > 806 && location.Y <= (0.5853 * location.X - 50) && location.Y >= (-0.5732 * location.X + 600))
+            {
+                location.X = 806;
+                userPolitics.Location = location;
+            }
+            else if (location.X < 806 && location.X >= 560 && location.Y > (0.5853 * location.X - 50))
+            {
+                location.Y = (int)(0.5853 * location.X - 50);
+                userPolitics.Location = location;
+            }
+            else if (location.X < 806 && location.X >= 560 && location.Y < (-0.5732 * location.X + 600))
+            {
+                location.Y = (int)(-0.5732 * location.X + 600);
+                userPolitics.Location = location;
+            }
+            else if (location.X > 806 && location.Y < (-0.5732 * location.X + 600))
+            {
+                location.X = 806;
+                location.Y = 137;
+                userPolitics.Location = location;
+            }
+            else if (location.Y < (-0.5732 * location.X + 600) && location.Y > (0.5853 * location.X - 50))
+            {
+                location.X = 560;
+                location.Y = 278;
+                userPolitics.Location = location;
+            }
+            else if (location.X > 806 && location.Y > (0.5853 * location.X - 50))
+            {
+                location.X = 806;
+                location.Y = 422;
+                userPolitics.Location = location;
+            }
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
