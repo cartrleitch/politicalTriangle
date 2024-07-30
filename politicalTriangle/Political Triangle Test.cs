@@ -24,14 +24,11 @@ namespace politicalTriangle
         }
 
         // communism = 560, 278, absolutism = 806, 422, individualism = 806, 137
-        // left = communism, up = individualism, and down = abolutismm and right = darwinism/anti-egalitarian.
+        // left = communism, down = individualism, and up = abolutism and right = darwinism/anti-egalitarian.
+        // button to reset quiz; don't let user spam submit button to move the userPolitics box
+        // ensure proper weights and bounds
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            /*splitString = ((string)radioButton1.Tag).Split(',');
-            selectedXVal = Convert.ToInt32(splitString[0]);
-            selectedYVal = Convert.ToInt32(splitString[1]);
-            location.X = 1088;
-            location.Y = 447;*/
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -95,6 +92,7 @@ namespace politicalTriangle
                 location.Y = 422;
                 userPolitics.Location = location;
             }
+            Console.WriteLine(userPolitics.Location.X + " " + userPolitics.Location.Y + "\n");
         }
         private void label1_Click(object sender, EventArgs e)
         {

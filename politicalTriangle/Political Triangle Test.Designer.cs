@@ -225,7 +225,7 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(93, 24);
             this.radioButton1.TabIndex = 0;
-            this.radioButton1.Tag = "10,-10";
+            this.radioButton1.Tag = "10,-20";
             this.radioButton1.Text = "Very Good";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -236,9 +236,9 @@
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 20);
+            this.label1.Size = new System.Drawing.Size(149, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Cool?";
+            this.label1.Text = "Complete abortion ban.";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // radioButton2
@@ -250,7 +250,7 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(58, 24);
             this.radioButton2.TabIndex = 2;
-            this.radioButton2.Tag = "20,-40";
+            this.radioButton2.Tag = "5,-15";
             this.radioButton2.Text = "Okay";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -259,7 +259,7 @@
             // 
             this.userPolitics.BackColor = System.Drawing.Color.Red;
             this.userPolitics.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userPolitics.Location = new System.Drawing.Point(725, 283);
+            this.userPolitics.Location = new System.Drawing.Point(728, 283);
             this.userPolitics.Name = "userPolitics";
             this.userPolitics.Size = new System.Drawing.Size(11, 10);
             this.userPolitics.TabIndex = 5;
@@ -287,6 +287,7 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(68, 24);
             this.radioButton3.TabIndex = 6;
+            this.radioButton3.Tag = "0,0";
             this.radioButton3.Text = "Neutral";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -316,6 +317,7 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(49, 24);
             this.radioButton5.TabIndex = 8;
+            this.radioButton5.Tag = "-10,20";
             this.radioButton5.Text = "Evil";
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -330,6 +332,7 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(51, 24);
             this.radioButton4.TabIndex = 7;
+            this.radioButton4.Tag = "-5,10";
             this.radioButton4.Text = "Bad";
             this.radioButton4.UseVisualStyleBackColor = true;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -381,6 +384,7 @@
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(49, 24);
             this.radioButton6.TabIndex = 8;
+            this.radioButton6.Tag = "10,25";
             this.radioButton6.Text = "Evil";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
@@ -394,6 +398,7 @@
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(51, 24);
             this.radioButton7.TabIndex = 7;
+            this.radioButton7.Tag = "5,10";
             this.radioButton7.Text = "Bad";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
@@ -403,9 +408,9 @@
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 20);
+            this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Cool?";
+            this.label2.Text = "Democracy.";
             // 
             // radioButton8
             // 
@@ -416,6 +421,7 @@
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(68, 24);
             this.radioButton8.TabIndex = 6;
+            this.radioButton8.Tag = "0,0";
             this.radioButton8.Text = "Neutral";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
@@ -428,7 +434,7 @@
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(93, 24);
             this.radioButton9.TabIndex = 0;
-            this.radioButton9.Tag = "10,-20";
+            this.radioButton9.Tag = "-10,-10";
             this.radioButton9.Text = "Very Good";
             this.radioButton9.UseVisualStyleBackColor = true;
             // 
@@ -441,6 +447,7 @@
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(58, 24);
             this.radioButton10.TabIndex = 2;
+            this.radioButton10.Tag = "-5,-5";
             this.radioButton10.Text = "Okay";
             this.radioButton10.UseVisualStyleBackColor = true;
             // 
@@ -468,6 +475,7 @@
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(49, 24);
             this.radioButton11.TabIndex = 8;
+            this.radioButton11.Tag = "-10,-20";
             this.radioButton11.Text = "Evil";
             this.radioButton11.UseVisualStyleBackColor = true;
             // 
@@ -481,6 +489,7 @@
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(51, 24);
             this.radioButton12.TabIndex = 7;
+            this.radioButton12.Tag = "-10,-10";
             this.radioButton12.Text = "Bad";
             this.radioButton12.UseVisualStyleBackColor = true;
             // 
@@ -490,9 +499,9 @@
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 20);
+            this.label3.Size = new System.Drawing.Size(135, 20);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Cool?";
+            this.label3.Text = "Christian Nationalism.";
             // 
             // radioButton13
             // 
@@ -503,6 +512,7 @@
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(68, 24);
             this.radioButton13.TabIndex = 6;
+            this.radioButton13.Tag = "0,5";
             this.radioButton13.Text = "Neutral";
             this.radioButton13.UseVisualStyleBackColor = true;
             // 
@@ -515,7 +525,7 @@
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(93, 24);
             this.radioButton14.TabIndex = 0;
-            this.radioButton14.Tag = "10,-20";
+            this.radioButton14.Tag = "10,15";
             this.radioButton14.Text = "Very Good";
             this.radioButton14.UseVisualStyleBackColor = true;
             // 
@@ -528,6 +538,7 @@
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Size = new System.Drawing.Size(58, 24);
             this.radioButton15.TabIndex = 2;
+            this.radioButton15.Tag = "5,5";
             this.radioButton15.Text = "Okay";
             this.radioButton15.UseVisualStyleBackColor = true;
             // 
@@ -555,6 +566,7 @@
             this.radioButton16.Name = "radioButton16";
             this.radioButton16.Size = new System.Drawing.Size(49, 24);
             this.radioButton16.TabIndex = 8;
+            this.radioButton16.Tag = "-20,15";
             this.radioButton16.Text = "Evil";
             this.radioButton16.UseVisualStyleBackColor = true;
             // 
@@ -568,6 +580,7 @@
             this.radioButton17.Name = "radioButton17";
             this.radioButton17.Size = new System.Drawing.Size(51, 24);
             this.radioButton17.TabIndex = 7;
+            this.radioButton17.Tag = "-10,10";
             this.radioButton17.Text = "Bad";
             this.radioButton17.UseVisualStyleBackColor = true;
             // 
@@ -577,9 +590,9 @@
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 20);
+            this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Cool?";
+            this.label4.Text = "Capitalism.";
             // 
             // radioButton18
             // 
@@ -590,6 +603,7 @@
             this.radioButton18.Name = "radioButton18";
             this.radioButton18.Size = new System.Drawing.Size(68, 24);
             this.radioButton18.TabIndex = 6;
+            this.radioButton18.Tag = "0,0";
             this.radioButton18.Text = "Neutral";
             this.radioButton18.UseVisualStyleBackColor = true;
             // 
@@ -602,6 +616,7 @@
             this.radioButton19.Name = "radioButton19";
             this.radioButton19.Size = new System.Drawing.Size(93, 24);
             this.radioButton19.TabIndex = 0;
+            this.radioButton19.Tag = "10,-20";
             this.radioButton19.Text = "Very Good";
             this.radioButton19.UseVisualStyleBackColor = true;
             // 
@@ -614,6 +629,7 @@
             this.radioButton20.Name = "radioButton20";
             this.radioButton20.Size = new System.Drawing.Size(58, 24);
             this.radioButton20.TabIndex = 2;
+            this.radioButton20.Tag = "5,-10";
             this.radioButton20.Text = "Okay";
             this.radioButton20.UseVisualStyleBackColor = true;
             // 
@@ -732,6 +748,7 @@
             this.radioButton21.Name = "radioButton21";
             this.radioButton21.Size = new System.Drawing.Size(49, 24);
             this.radioButton21.TabIndex = 8;
+            this.radioButton21.Tag = "10,-20";
             this.radioButton21.Text = "Evil";
             this.radioButton21.UseVisualStyleBackColor = true;
             // 
@@ -745,6 +762,7 @@
             this.radioButton22.Name = "radioButton22";
             this.radioButton22.Size = new System.Drawing.Size(51, 24);
             this.radioButton22.TabIndex = 7;
+            this.radioButton22.Tag = "5,-10";
             this.radioButton22.Text = "Bad";
             this.radioButton22.UseVisualStyleBackColor = true;
             // 
@@ -754,9 +772,9 @@
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 16);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 20);
+            this.label5.Size = new System.Drawing.Size(124, 20);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Cool?";
+            this.label5.Text = "BLM (organization).";
             // 
             // radioButton23
             // 
@@ -767,6 +785,7 @@
             this.radioButton23.Name = "radioButton23";
             this.radioButton23.Size = new System.Drawing.Size(68, 24);
             this.radioButton23.TabIndex = 6;
+            this.radioButton23.Tag = "0,0";
             this.radioButton23.Text = "Neutral";
             this.radioButton23.UseVisualStyleBackColor = true;
             // 
@@ -779,6 +798,7 @@
             this.radioButton24.Name = "radioButton24";
             this.radioButton24.Size = new System.Drawing.Size(93, 24);
             this.radioButton24.TabIndex = 0;
+            this.radioButton24.Tag = "-20, 5";
             this.radioButton24.Text = "Very Good";
             this.radioButton24.UseVisualStyleBackColor = true;
             // 
@@ -791,6 +811,7 @@
             this.radioButton25.Name = "radioButton25";
             this.radioButton25.Size = new System.Drawing.Size(58, 24);
             this.radioButton25.TabIndex = 2;
+            this.radioButton25.Tag = "-10,0";
             this.radioButton25.Text = "Okay";
             this.radioButton25.UseVisualStyleBackColor = true;
             // 
@@ -909,6 +930,7 @@
             this.radioButton36.Name = "radioButton36";
             this.radioButton36.Size = new System.Drawing.Size(49, 24);
             this.radioButton36.TabIndex = 8;
+            this.radioButton36.Tag = "10,20";
             this.radioButton36.Text = "Evil";
             this.radioButton36.UseVisualStyleBackColor = true;
             // 
@@ -922,6 +944,7 @@
             this.radioButton37.Name = "radioButton37";
             this.radioButton37.Size = new System.Drawing.Size(51, 24);
             this.radioButton37.TabIndex = 7;
+            this.radioButton37.Tag = "10,10";
             this.radioButton37.Text = "Bad";
             this.radioButton37.UseVisualStyleBackColor = true;
             // 
@@ -931,9 +954,9 @@
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(6, 16);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 20);
+            this.label8.Size = new System.Drawing.Size(93, 20);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Cool?";
+            this.label8.Text = "Gay marriage.";
             // 
             // radioButton38
             // 
@@ -944,6 +967,7 @@
             this.radioButton38.Name = "radioButton38";
             this.radioButton38.Size = new System.Drawing.Size(68, 24);
             this.radioButton38.TabIndex = 6;
+            this.radioButton38.Tag = "0,-10";
             this.radioButton38.Text = "Neutral";
             this.radioButton38.UseVisualStyleBackColor = true;
             // 
@@ -956,6 +980,7 @@
             this.radioButton39.Name = "radioButton39";
             this.radioButton39.Size = new System.Drawing.Size(93, 24);
             this.radioButton39.TabIndex = 0;
+            this.radioButton39.Tag = "-10,-30";
             this.radioButton39.Text = "Very Good";
             this.radioButton39.UseVisualStyleBackColor = true;
             // 
@@ -968,6 +993,7 @@
             this.radioButton40.Name = "radioButton40";
             this.radioButton40.Size = new System.Drawing.Size(58, 24);
             this.radioButton40.TabIndex = 2;
+            this.radioButton40.Tag = "-5,-15";
             this.radioButton40.Text = "Okay";
             this.radioButton40.UseVisualStyleBackColor = true;
             // 
@@ -1086,6 +1112,7 @@
             this.radioButton46.Name = "radioButton46";
             this.radioButton46.Size = new System.Drawing.Size(49, 24);
             this.radioButton46.TabIndex = 8;
+            this.radioButton46.Tag = "20,10";
             this.radioButton46.Text = "Evil";
             this.radioButton46.UseVisualStyleBackColor = true;
             // 
@@ -1099,6 +1126,7 @@
             this.radioButton47.Name = "radioButton47";
             this.radioButton47.Size = new System.Drawing.Size(51, 24);
             this.radioButton47.TabIndex = 7;
+            this.radioButton47.Tag = "10,5";
             this.radioButton47.Text = "Bad";
             this.radioButton47.UseVisualStyleBackColor = true;
             // 
@@ -1108,9 +1136,9 @@
             this.label10.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(6, 16);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 20);
+            this.label10.Size = new System.Drawing.Size(71, 20);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Cool?";
+            this.label10.Text = "Feminism.";
             // 
             // radioButton48
             // 
@@ -1121,6 +1149,7 @@
             this.radioButton48.Name = "radioButton48";
             this.radioButton48.Size = new System.Drawing.Size(68, 24);
             this.radioButton48.TabIndex = 6;
+            this.radioButton48.Tag = "0,0";
             this.radioButton48.Text = "Neutral";
             this.radioButton48.UseVisualStyleBackColor = true;
             // 
@@ -1133,6 +1162,7 @@
             this.radioButton49.Name = "radioButton49";
             this.radioButton49.Size = new System.Drawing.Size(93, 24);
             this.radioButton49.TabIndex = 0;
+            this.radioButton49.Tag = "-20,-5";
             this.radioButton49.Text = "Very Good";
             this.radioButton49.UseVisualStyleBackColor = true;
             // 
@@ -1145,6 +1175,7 @@
             this.radioButton50.Name = "radioButton50";
             this.radioButton50.Size = new System.Drawing.Size(58, 24);
             this.radioButton50.TabIndex = 2;
+            this.radioButton50.Tag = "-10,0";
             this.radioButton50.Text = "Okay";
             this.radioButton50.UseVisualStyleBackColor = true;
             // 
@@ -1263,6 +1294,7 @@
             this.radioButton56.Name = "radioButton56";
             this.radioButton56.Size = new System.Drawing.Size(49, 24);
             this.radioButton56.TabIndex = 8;
+            this.radioButton56.Tag = "10,-25";
             this.radioButton56.Text = "Evil";
             this.radioButton56.UseVisualStyleBackColor = true;
             // 
@@ -1276,6 +1308,7 @@
             this.radioButton57.Name = "radioButton57";
             this.radioButton57.Size = new System.Drawing.Size(51, 24);
             this.radioButton57.TabIndex = 7;
+            this.radioButton57.Tag = "10,-10";
             this.radioButton57.Text = "Bad";
             this.radioButton57.UseVisualStyleBackColor = true;
             // 
@@ -1285,9 +1318,9 @@
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(6, 16);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 20);
+            this.label12.Size = new System.Drawing.Size(106, 20);
             this.label12.TabIndex = 1;
-            this.label12.Text = "Cool?";
+            this.label12.Text = "Free healthcare.";
             // 
             // radioButton58
             // 
@@ -1298,6 +1331,7 @@
             this.radioButton58.Name = "radioButton58";
             this.radioButton58.Size = new System.Drawing.Size(68, 24);
             this.radioButton58.TabIndex = 6;
+            this.radioButton58.Tag = "0,0";
             this.radioButton58.Text = "Neutral";
             this.radioButton58.UseVisualStyleBackColor = true;
             // 
@@ -1310,6 +1344,7 @@
             this.radioButton59.Name = "radioButton59";
             this.radioButton59.Size = new System.Drawing.Size(93, 24);
             this.radioButton59.TabIndex = 0;
+            this.radioButton59.Tag = "-10,10";
             this.radioButton59.Text = "Very Good";
             this.radioButton59.UseVisualStyleBackColor = true;
             // 
@@ -1322,6 +1357,7 @@
             this.radioButton60.Name = "radioButton60";
             this.radioButton60.Size = new System.Drawing.Size(58, 24);
             this.radioButton60.TabIndex = 2;
+            this.radioButton60.Tag = "-5,5";
             this.radioButton60.Text = "Okay";
             this.radioButton60.UseVisualStyleBackColor = true;
             // 
@@ -1440,6 +1476,7 @@
             this.radioButton66.Name = "radioButton66";
             this.radioButton66.Size = new System.Drawing.Size(49, 24);
             this.radioButton66.TabIndex = 8;
+            this.radioButton66.Tag = "25,10";
             this.radioButton66.Text = "Evil";
             this.radioButton66.UseVisualStyleBackColor = true;
             // 
@@ -1453,6 +1490,7 @@
             this.radioButton67.Name = "radioButton67";
             this.radioButton67.Size = new System.Drawing.Size(51, 24);
             this.radioButton67.TabIndex = 7;
+            this.radioButton67.Tag = "15,10";
             this.radioButton67.Text = "Bad";
             this.radioButton67.UseVisualStyleBackColor = true;
             // 
@@ -1462,9 +1500,9 @@
             this.label14.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(6, 16);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(44, 20);
+            this.label14.Size = new System.Drawing.Size(103, 20);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Cool?";
+            this.label14.Text = "Ethnic diversity.";
             // 
             // radioButton68
             // 
@@ -1475,6 +1513,7 @@
             this.radioButton68.Name = "radioButton68";
             this.radioButton68.Size = new System.Drawing.Size(68, 24);
             this.radioButton68.TabIndex = 6;
+            this.radioButton68.Tag = "0,0";
             this.radioButton68.Text = "Neutral";
             this.radioButton68.UseVisualStyleBackColor = true;
             // 
@@ -1487,6 +1526,7 @@
             this.radioButton69.Name = "radioButton69";
             this.radioButton69.Size = new System.Drawing.Size(93, 24);
             this.radioButton69.TabIndex = 0;
+            this.radioButton69.Tag = "-20,-5";
             this.radioButton69.Text = "Very Good";
             this.radioButton69.UseVisualStyleBackColor = true;
             // 
@@ -1499,6 +1539,7 @@
             this.radioButton70.Name = "radioButton70";
             this.radioButton70.Size = new System.Drawing.Size(58, 24);
             this.radioButton70.TabIndex = 2;
+            this.radioButton70.Tag = "-10,0";
             this.radioButton70.Text = "Okay";
             this.radioButton70.UseVisualStyleBackColor = true;
             // 
@@ -1799,6 +1840,7 @@
             this.radioButton76.Name = "radioButton76";
             this.radioButton76.Size = new System.Drawing.Size(49, 24);
             this.radioButton76.TabIndex = 8;
+            this.radioButton76.Tag = "15,-25";
             this.radioButton76.Text = "Evil";
             this.radioButton76.UseVisualStyleBackColor = true;
             // 
@@ -1812,6 +1854,7 @@
             this.radioButton77.Name = "radioButton77";
             this.radioButton77.Size = new System.Drawing.Size(51, 24);
             this.radioButton77.TabIndex = 7;
+            this.radioButton77.Tag = "10,-15";
             this.radioButton77.Text = "Bad";
             this.radioButton77.UseVisualStyleBackColor = true;
             // 
@@ -1821,9 +1864,9 @@
             this.label16.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(6, 16);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 20);
+            this.label16.Size = new System.Drawing.Size(81, 20);
             this.label16.TabIndex = 1;
-            this.label16.Text = "Cool?";
+            this.label16.Text = "Gun control.";
             // 
             // radioButton78
             // 
@@ -1834,6 +1877,7 @@
             this.radioButton78.Name = "radioButton78";
             this.radioButton78.Size = new System.Drawing.Size(68, 24);
             this.radioButton78.TabIndex = 6;
+            this.radioButton78.Tag = "0,0";
             this.radioButton78.Text = "Neutral";
             this.radioButton78.UseVisualStyleBackColor = true;
             // 
@@ -1846,6 +1890,7 @@
             this.radioButton79.Name = "radioButton79";
             this.radioButton79.Size = new System.Drawing.Size(93, 24);
             this.radioButton79.TabIndex = 0;
+            this.radioButton79.Tag = "-10,10";
             this.radioButton79.Text = "Very Good";
             this.radioButton79.UseVisualStyleBackColor = true;
             // 
@@ -1858,6 +1903,7 @@
             this.radioButton80.Name = "radioButton80";
             this.radioButton80.Size = new System.Drawing.Size(58, 24);
             this.radioButton80.TabIndex = 2;
+            this.radioButton80.Tag = "-5,5";
             this.radioButton80.Text = "Okay";
             this.radioButton80.UseVisualStyleBackColor = true;
             // 
@@ -1976,6 +2022,7 @@
             this.radioButton96.Name = "radioButton96";
             this.radioButton96.Size = new System.Drawing.Size(49, 24);
             this.radioButton96.TabIndex = 8;
+            this.radioButton96.Tag = "10,5";
             this.radioButton96.Text = "Evil";
             this.radioButton96.UseVisualStyleBackColor = true;
             // 
@@ -1989,6 +2036,7 @@
             this.radioButton97.Name = "radioButton97";
             this.radioButton97.Size = new System.Drawing.Size(51, 24);
             this.radioButton97.TabIndex = 7;
+            this.radioButton97.Tag = "5,5";
             this.radioButton97.Text = "Bad";
             this.radioButton97.UseVisualStyleBackColor = true;
             // 
@@ -1998,9 +2046,9 @@
             this.label20.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(6, 16);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(44, 20);
+            this.label20.Size = new System.Drawing.Size(52, 20);
             this.label20.TabIndex = 1;
-            this.label20.Text = "Cool?";
+            this.label20.Text = "Reddit.";
             // 
             // radioButton98
             // 
@@ -2011,6 +2059,7 @@
             this.radioButton98.Name = "radioButton98";
             this.radioButton98.Size = new System.Drawing.Size(68, 24);
             this.radioButton98.TabIndex = 6;
+            this.radioButton98.Tag = "0,0";
             this.radioButton98.Text = "Neutral";
             this.radioButton98.UseVisualStyleBackColor = true;
             // 
@@ -2023,6 +2072,7 @@
             this.radioButton99.Name = "radioButton99";
             this.radioButton99.Size = new System.Drawing.Size(93, 24);
             this.radioButton99.TabIndex = 0;
+            this.radioButton99.Tag = "-10,5";
             this.radioButton99.Text = "Very Good";
             this.radioButton99.UseVisualStyleBackColor = true;
             // 
@@ -2035,6 +2085,7 @@
             this.radioButton100.Name = "radioButton100";
             this.radioButton100.Size = new System.Drawing.Size(58, 24);
             this.radioButton100.TabIndex = 2;
+            this.radioButton100.Tag = "-5,0";
             this.radioButton100.Text = "Okay";
             this.radioButton100.UseVisualStyleBackColor = true;
             // 
@@ -2153,6 +2204,7 @@
             this.radioButton106.Name = "radioButton106";
             this.radioButton106.Size = new System.Drawing.Size(49, 24);
             this.radioButton106.TabIndex = 8;
+            this.radioButton106.Tag = "-10,-10";
             this.radioButton106.Text = "Evil";
             this.radioButton106.UseVisualStyleBackColor = true;
             // 
@@ -2166,6 +2218,7 @@
             this.radioButton107.Name = "radioButton107";
             this.radioButton107.Size = new System.Drawing.Size(51, 24);
             this.radioButton107.TabIndex = 7;
+            this.radioButton107.Tag = "-5,-5";
             this.radioButton107.Text = "Bad";
             this.radioButton107.UseVisualStyleBackColor = true;
             // 
@@ -2175,9 +2228,9 @@
             this.label22.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(6, 16);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(44, 20);
+            this.label22.Size = new System.Drawing.Size(94, 20);
             this.label22.TabIndex = 1;
-            this.label22.Text = "Cool?";
+            this.label22.Text = "Death penalty.";
             // 
             // radioButton108
             // 
@@ -2188,6 +2241,7 @@
             this.radioButton108.Name = "radioButton108";
             this.radioButton108.Size = new System.Drawing.Size(68, 24);
             this.radioButton108.TabIndex = 6;
+            this.radioButton108.Tag = "5,-5";
             this.radioButton108.Text = "Neutral";
             this.radioButton108.UseVisualStyleBackColor = true;
             // 
@@ -2200,6 +2254,7 @@
             this.radioButton109.Name = "radioButton109";
             this.radioButton109.Size = new System.Drawing.Size(93, 24);
             this.radioButton109.TabIndex = 0;
+            this.radioButton109.Tag = "15,25";
             this.radioButton109.Text = "Very Good";
             this.radioButton109.UseVisualStyleBackColor = true;
             // 
@@ -2212,6 +2267,7 @@
             this.radioButton110.Name = "radioButton110";
             this.radioButton110.Size = new System.Drawing.Size(58, 24);
             this.radioButton110.TabIndex = 2;
+            this.radioButton110.Tag = "10,15";
             this.radioButton110.Text = "Okay";
             this.radioButton110.UseVisualStyleBackColor = true;
             // 
@@ -2240,7 +2296,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Red;
-            this.pictureBox2.Location = new System.Drawing.Point(598, 101);
+            this.pictureBox2.Location = new System.Drawing.Point(597, 101);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(10, 10);
             this.pictureBox2.TabIndex = 11;
