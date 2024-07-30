@@ -13,43 +13,51 @@ namespace politicalTriangle
     public partial class Form1 : Form
     {
         private Point location = Point.Empty;
+        private string[] splitString = new string[2];
+        private int selectedXVal = 0;
+        private int selectedYVal = 0;
         public Form1()
         {
             InitializeComponent();
+            location = userPolitics.Location;
         }
 
         // communism = 560, 278, absolutism = 806, 422, individualism = 805, 137
+        // left = communism, up = individualism, and down = abolutismm and right = darwinism/anti-egalitarian.
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            label1.Text = "Banana";
-            location.X = 560;
-            location.Y = 278;
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            label1.Text = "Orange";
-            location.X = 806;
-            location.Y = 422;
-        }
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            label1.Text = "Blueburry";
-            location.X = 805;
-            location.Y = 137;
-        }
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton5_CheckedChanged(object sender, EventArgs e)
-        {
-            userPolitics.Location = location;
+            /*splitString = ((string)radioButton1.Tag).Split(',');
+            selectedXVal = Convert.ToInt32(splitString[0]);
+            selectedYVal = Convert.ToInt32(splitString[1]);
+            location.X = 1088;
+            location.Y = 447;*/
         }
        private void button1_Click(object sender, EventArgs e)
-        {
-
+        {  
+            foreach (Control control in flowLayoutPanel1.Controls)
+            {
+                if (control is GroupBox)
+                {
+                    foreach (Control c in control.Controls)
+                    {
+                        if (c is RadioButton)
+                        {
+                            RadioButton radioButton = c as RadioButton;
+                            if (radioButton.Checked)
+                            {
+                                splitString = ((string)radioButton.Tag).Split(',');
+                                selectedXVal += Convert.ToInt32(splitString[0]);
+                                selectedYVal += Convert.ToInt32(splitString[1]);
+                                Console.Write(radioButton.Name + " " + selectedXVal + " , " + selectedYVal + "\n");
+                            }
+                        }
+                    }
+                }
+            }
+            location.X += selectedXVal;
+            location.Y += selectedYVal;
+            Console.WriteLine(selectedXVal + " " + selectedYVal + "\n");
+            userPolitics.Location = location;
         } 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -69,6 +77,16 @@ namespace politicalTriangle
         
 
         private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userPolitics_Click(object sender, EventArgs e)
+        {
+ 
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
