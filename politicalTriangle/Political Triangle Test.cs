@@ -19,19 +19,18 @@ namespace politicalTriangle
         public Form1()
         {
             InitializeComponent();
+            label1.Select();
             location = userPolitics.Location;
             Console.WriteLine(location.X + " " + location.Y + "\n");
         }
 
         // communism = 560, 278, absolutism = 806, 422, individualism = 806, 137
         // left = communism, down = individualism, and up = abolutism and right = darwinism/anti-egalitarian.
-        // button to reset quiz; don't let user spam submit button to move the userPolitics box
-        // ensure proper weights and bounds
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-        }
         private void button1_Click(object sender, EventArgs e)
         {
+            this.ActiveControl = null;
+            button1.Enabled = false;
+            // retrieve data from selected radio buttons
             foreach (Control control in flowLayoutPanel1.Controls)
             {
                 if (control is GroupBox)
@@ -55,6 +54,7 @@ namespace politicalTriangle
             location.X += selectedXVal;
             location.Y += selectedYVal;
             Console.WriteLine(selectedXVal + " " + selectedYVal + "\n");
+            // bounds checking
             if (location.X <= 806 && location.X >= 560 && location.Y <= (0.5853 * location.X - 50) && location.Y >= (-0.5732 * location.X + 600))
             {
                 userPolitics.Location = location;
@@ -94,36 +94,20 @@ namespace politicalTriangle
             }
             Console.WriteLine(userPolitics.Location.X + " " + userPolitics.Location.Y + "\n");
         }
-        private void label1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            // refresh form and all stored data
+            Console.WriteLine("Reset");
+            this.Controls.Clear();
+            this.InitializeComponent();
+            flowLayoutPanel1.AutoScroll = true;
+            selectedXVal = 0;
+            selectedYVal = 0;
+            location = userPolitics.Location;
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userPolitics_Click(object sender, EventArgs e)
-        {
- 
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            System.Diagnostics.Process.Start("https://www.reddit.com/r/TriangleStrategy/comments/ss1l47/the_games_name_could_refer_to_a_political/");
         }
     }
 }

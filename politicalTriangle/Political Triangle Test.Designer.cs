@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -186,8 +187,12 @@
             this.radioButton109 = new System.Windows.Forms.RadioButton();
             this.radioButton110 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.userPolitics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -220,40 +225,37 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(6, 39);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(93, 24);
+            this.radioButton1.Size = new System.Drawing.Size(100, 22);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.Tag = "10,-20";
             this.radioButton1.Text = "Very Good";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 20);
+            this.label1.Size = new System.Drawing.Size(159, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Complete abortion ban.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(6, 60);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(58, 24);
+            this.radioButton2.Size = new System.Drawing.Size(62, 22);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.Tag = "5,-15";
             this.radioButton2.Text = "Okay";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // userPolitics
             // 
@@ -264,7 +266,6 @@
             this.userPolitics.Size = new System.Drawing.Size(11, 10);
             this.userPolitics.TabIndex = 5;
             this.userPolitics.TabStop = false;
-            this.userPolitics.Click += new System.EventHandler(this.userPolitics_Click);
             // 
             // pictureBox1
             // 
@@ -282,15 +283,14 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(6, 81);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(68, 24);
+            this.radioButton3.Size = new System.Drawing.Size(75, 22);
             this.radioButton3.TabIndex = 6;
             this.radioButton3.Tag = "0,0";
             this.radioButton3.Text = "Neutral";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -300,42 +300,40 @@
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(233, 163);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Question 1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.Location = new System.Drawing.Point(6, 123);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(49, 24);
+            this.radioButton5.Size = new System.Drawing.Size(51, 22);
             this.radioButton5.TabIndex = 8;
             this.radioButton5.Tag = "-10,20";
             this.radioButton5.Text = "Evil";
             this.radioButton5.UseVisualStyleBackColor = true;
-            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton4.Location = new System.Drawing.Point(6, 102);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(51, 24);
+            this.radioButton4.Size = new System.Drawing.Size(55, 22);
             this.radioButton4.TabIndex = 7;
             this.radioButton4.Tag = "-5,10";
             this.radioButton4.Text = "Bad";
             this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // flowLayoutPanel1
             // 
@@ -354,11 +352,11 @@
             this.flowLayoutPanel1.Controls.Add(this.groupBox19);
             this.flowLayoutPanel1.Controls.Add(this.groupBox21);
             this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(87, 84);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(349, 403);
             this.flowLayoutPanel1.TabIndex = 9;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // groupBox2
             // 
@@ -368,6 +366,7 @@
             this.groupBox2.Controls.Add(this.radioButton8);
             this.groupBox2.Controls.Add(this.radioButton9);
             this.groupBox2.Controls.Add(this.radioButton10);
+            this.groupBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(3, 172);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(233, 163);
@@ -379,10 +378,10 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.Location = new System.Drawing.Point(6, 123);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(49, 24);
+            this.radioButton6.Size = new System.Drawing.Size(51, 22);
             this.radioButton6.TabIndex = 8;
             this.radioButton6.Tag = "10,25";
             this.radioButton6.Text = "Evil";
@@ -392,11 +391,11 @@
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton7.Location = new System.Drawing.Point(6, 102);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(51, 24);
+            this.radioButton7.Size = new System.Drawing.Size(55, 22);
             this.radioButton7.TabIndex = 7;
             this.radioButton7.Tag = "5,10";
             this.radioButton7.Text = "Bad";
@@ -405,10 +404,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 16);
+            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(87, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Democracy.";
             // 
@@ -416,10 +415,10 @@
             // 
             this.radioButton8.AutoSize = true;
             this.radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton8.Location = new System.Drawing.Point(6, 81);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(68, 24);
+            this.radioButton8.Size = new System.Drawing.Size(75, 22);
             this.radioButton8.TabIndex = 6;
             this.radioButton8.Tag = "0,0";
             this.radioButton8.Text = "Neutral";
@@ -429,10 +428,10 @@
             // 
             this.radioButton9.AutoSize = true;
             this.radioButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.Location = new System.Drawing.Point(6, 39);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(93, 24);
+            this.radioButton9.Size = new System.Drawing.Size(100, 22);
             this.radioButton9.TabIndex = 0;
             this.radioButton9.Tag = "-10,-10";
             this.radioButton9.Text = "Very Good";
@@ -442,10 +441,10 @@
             // 
             this.radioButton10.AutoSize = true;
             this.radioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton10.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton10.Location = new System.Drawing.Point(6, 60);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(58, 24);
+            this.radioButton10.Size = new System.Drawing.Size(62, 22);
             this.radioButton10.TabIndex = 2;
             this.radioButton10.Tag = "-5,-5";
             this.radioButton10.Text = "Okay";
@@ -459,6 +458,7 @@
             this.groupBox3.Controls.Add(this.radioButton13);
             this.groupBox3.Controls.Add(this.radioButton14);
             this.groupBox3.Controls.Add(this.radioButton15);
+            this.groupBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(3, 341);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(233, 163);
@@ -470,10 +470,10 @@
             // 
             this.radioButton11.AutoSize = true;
             this.radioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton11.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton11.Location = new System.Drawing.Point(6, 123);
             this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(49, 24);
+            this.radioButton11.Size = new System.Drawing.Size(51, 22);
             this.radioButton11.TabIndex = 8;
             this.radioButton11.Tag = "-10,-20";
             this.radioButton11.Text = "Evil";
@@ -483,11 +483,11 @@
             // 
             this.radioButton12.AutoSize = true;
             this.radioButton12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton12.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton12.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton12.Location = new System.Drawing.Point(6, 102);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(51, 24);
+            this.radioButton12.Size = new System.Drawing.Size(55, 22);
             this.radioButton12.TabIndex = 7;
             this.radioButton12.Tag = "-10,-10";
             this.radioButton12.Text = "Bad";
@@ -496,10 +496,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 16);
+            this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 20);
+            this.label3.Size = new System.Drawing.Size(150, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "Christian Nationalism.";
             // 
@@ -507,10 +507,10 @@
             // 
             this.radioButton13.AutoSize = true;
             this.radioButton13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton13.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton13.Location = new System.Drawing.Point(6, 81);
             this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(68, 24);
+            this.radioButton13.Size = new System.Drawing.Size(75, 22);
             this.radioButton13.TabIndex = 6;
             this.radioButton13.Tag = "0,5";
             this.radioButton13.Text = "Neutral";
@@ -520,10 +520,10 @@
             // 
             this.radioButton14.AutoSize = true;
             this.radioButton14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton14.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton14.Location = new System.Drawing.Point(6, 39);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(93, 24);
+            this.radioButton14.Size = new System.Drawing.Size(100, 22);
             this.radioButton14.TabIndex = 0;
             this.radioButton14.Tag = "10,15";
             this.radioButton14.Text = "Very Good";
@@ -533,10 +533,10 @@
             // 
             this.radioButton15.AutoSize = true;
             this.radioButton15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton15.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton15.Location = new System.Drawing.Point(6, 60);
             this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(58, 24);
+            this.radioButton15.Size = new System.Drawing.Size(62, 22);
             this.radioButton15.TabIndex = 2;
             this.radioButton15.Tag = "5,5";
             this.radioButton15.Text = "Okay";
@@ -550,6 +550,7 @@
             this.groupBox4.Controls.Add(this.radioButton18);
             this.groupBox4.Controls.Add(this.radioButton19);
             this.groupBox4.Controls.Add(this.radioButton20);
+            this.groupBox4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(3, 510);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(233, 163);
@@ -561,10 +562,10 @@
             // 
             this.radioButton16.AutoSize = true;
             this.radioButton16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton16.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton16.Location = new System.Drawing.Point(6, 123);
             this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(49, 24);
+            this.radioButton16.Size = new System.Drawing.Size(51, 22);
             this.radioButton16.TabIndex = 8;
             this.radioButton16.Tag = "-20,15";
             this.radioButton16.Text = "Evil";
@@ -574,11 +575,11 @@
             // 
             this.radioButton17.AutoSize = true;
             this.radioButton17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton17.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton17.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton17.Location = new System.Drawing.Point(6, 102);
             this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(51, 24);
+            this.radioButton17.Size = new System.Drawing.Size(55, 22);
             this.radioButton17.TabIndex = 7;
             this.radioButton17.Tag = "-10,10";
             this.radioButton17.Text = "Bad";
@@ -587,10 +588,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
+            this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 1;
             this.label4.Text = "Capitalism.";
             // 
@@ -598,10 +599,10 @@
             // 
             this.radioButton18.AutoSize = true;
             this.radioButton18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton18.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton18.Location = new System.Drawing.Point(6, 81);
             this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(68, 24);
+            this.radioButton18.Size = new System.Drawing.Size(75, 22);
             this.radioButton18.TabIndex = 6;
             this.radioButton18.Tag = "0,0";
             this.radioButton18.Text = "Neutral";
@@ -611,10 +612,10 @@
             // 
             this.radioButton19.AutoSize = true;
             this.radioButton19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton19.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton19.Location = new System.Drawing.Point(6, 39);
             this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(93, 24);
+            this.radioButton19.Size = new System.Drawing.Size(100, 22);
             this.radioButton19.TabIndex = 0;
             this.radioButton19.Tag = "10,-20";
             this.radioButton19.Text = "Very Good";
@@ -624,10 +625,10 @@
             // 
             this.radioButton20.AutoSize = true;
             this.radioButton20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton20.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton20.Location = new System.Drawing.Point(6, 60);
             this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(58, 24);
+            this.radioButton20.Size = new System.Drawing.Size(62, 22);
             this.radioButton20.TabIndex = 2;
             this.radioButton20.Tag = "5,-10";
             this.radioButton20.Text = "Okay";
@@ -642,6 +643,7 @@
             this.groupBox5.Controls.Add(this.radioButton23);
             this.groupBox5.Controls.Add(this.radioButton24);
             this.groupBox5.Controls.Add(this.radioButton25);
+            this.groupBox5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(3, 679);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(233, 163);
@@ -743,10 +745,10 @@
             // 
             this.radioButton21.AutoSize = true;
             this.radioButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton21.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton21.Location = new System.Drawing.Point(6, 123);
             this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(49, 24);
+            this.radioButton21.Size = new System.Drawing.Size(51, 22);
             this.radioButton21.TabIndex = 8;
             this.radioButton21.Tag = "10,-20";
             this.radioButton21.Text = "Evil";
@@ -756,11 +758,11 @@
             // 
             this.radioButton22.AutoSize = true;
             this.radioButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton22.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton22.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton22.Location = new System.Drawing.Point(6, 102);
             this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(51, 24);
+            this.radioButton22.Size = new System.Drawing.Size(55, 22);
             this.radioButton22.TabIndex = 7;
             this.radioButton22.Tag = "5,-10";
             this.radioButton22.Text = "Bad";
@@ -769,10 +771,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 16);
+            this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 20);
+            this.label5.Size = new System.Drawing.Size(134, 17);
             this.label5.TabIndex = 1;
             this.label5.Text = "BLM (organization).";
             // 
@@ -780,10 +782,10 @@
             // 
             this.radioButton23.AutoSize = true;
             this.radioButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton23.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton23.Location = new System.Drawing.Point(6, 81);
             this.radioButton23.Name = "radioButton23";
-            this.radioButton23.Size = new System.Drawing.Size(68, 24);
+            this.radioButton23.Size = new System.Drawing.Size(75, 22);
             this.radioButton23.TabIndex = 6;
             this.radioButton23.Tag = "0,0";
             this.radioButton23.Text = "Neutral";
@@ -793,10 +795,10 @@
             // 
             this.radioButton24.AutoSize = true;
             this.radioButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton24.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton24.Location = new System.Drawing.Point(6, 39);
             this.radioButton24.Name = "radioButton24";
-            this.radioButton24.Size = new System.Drawing.Size(93, 24);
+            this.radioButton24.Size = new System.Drawing.Size(100, 22);
             this.radioButton24.TabIndex = 0;
             this.radioButton24.Tag = "-20, 5";
             this.radioButton24.Text = "Very Good";
@@ -806,10 +808,10 @@
             // 
             this.radioButton25.AutoSize = true;
             this.radioButton25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton25.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton25.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton25.Location = new System.Drawing.Point(6, 60);
             this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(58, 24);
+            this.radioButton25.Size = new System.Drawing.Size(62, 22);
             this.radioButton25.TabIndex = 2;
             this.radioButton25.Tag = "-10,0";
             this.radioButton25.Text = "Okay";
@@ -824,6 +826,7 @@
             this.groupBox7.Controls.Add(this.radioButton38);
             this.groupBox7.Controls.Add(this.radioButton39);
             this.groupBox7.Controls.Add(this.radioButton40);
+            this.groupBox7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(3, 848);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(233, 163);
@@ -925,10 +928,10 @@
             // 
             this.radioButton36.AutoSize = true;
             this.radioButton36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton36.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton36.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton36.Location = new System.Drawing.Point(6, 123);
             this.radioButton36.Name = "radioButton36";
-            this.radioButton36.Size = new System.Drawing.Size(49, 24);
+            this.radioButton36.Size = new System.Drawing.Size(51, 22);
             this.radioButton36.TabIndex = 8;
             this.radioButton36.Tag = "10,20";
             this.radioButton36.Text = "Evil";
@@ -938,11 +941,11 @@
             // 
             this.radioButton37.AutoSize = true;
             this.radioButton37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton37.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton37.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton37.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton37.Location = new System.Drawing.Point(6, 102);
             this.radioButton37.Name = "radioButton37";
-            this.radioButton37.Size = new System.Drawing.Size(51, 24);
+            this.radioButton37.Size = new System.Drawing.Size(55, 22);
             this.radioButton37.TabIndex = 7;
             this.radioButton37.Tag = "10,10";
             this.radioButton37.Text = "Bad";
@@ -951,10 +954,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 16);
+            this.label8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 19);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 20);
+            this.label8.Size = new System.Drawing.Size(100, 17);
             this.label8.TabIndex = 1;
             this.label8.Text = "Gay marriage.";
             // 
@@ -962,10 +965,10 @@
             // 
             this.radioButton38.AutoSize = true;
             this.radioButton38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton38.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton38.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton38.Location = new System.Drawing.Point(6, 81);
             this.radioButton38.Name = "radioButton38";
-            this.radioButton38.Size = new System.Drawing.Size(68, 24);
+            this.radioButton38.Size = new System.Drawing.Size(75, 22);
             this.radioButton38.TabIndex = 6;
             this.radioButton38.Tag = "0,-10";
             this.radioButton38.Text = "Neutral";
@@ -975,10 +978,10 @@
             // 
             this.radioButton39.AutoSize = true;
             this.radioButton39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton39.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton39.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton39.Location = new System.Drawing.Point(6, 39);
             this.radioButton39.Name = "radioButton39";
-            this.radioButton39.Size = new System.Drawing.Size(93, 24);
+            this.radioButton39.Size = new System.Drawing.Size(100, 22);
             this.radioButton39.TabIndex = 0;
             this.radioButton39.Tag = "-10,-30";
             this.radioButton39.Text = "Very Good";
@@ -988,10 +991,10 @@
             // 
             this.radioButton40.AutoSize = true;
             this.radioButton40.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton40.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton40.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton40.Location = new System.Drawing.Point(6, 60);
             this.radioButton40.Name = "radioButton40";
-            this.radioButton40.Size = new System.Drawing.Size(58, 24);
+            this.radioButton40.Size = new System.Drawing.Size(62, 22);
             this.radioButton40.TabIndex = 2;
             this.radioButton40.Tag = "-5,-15";
             this.radioButton40.Text = "Okay";
@@ -1006,6 +1009,7 @@
             this.groupBox9.Controls.Add(this.radioButton48);
             this.groupBox9.Controls.Add(this.radioButton49);
             this.groupBox9.Controls.Add(this.radioButton50);
+            this.groupBox9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(3, 1017);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(233, 163);
@@ -1107,10 +1111,10 @@
             // 
             this.radioButton46.AutoSize = true;
             this.radioButton46.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton46.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton46.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton46.Location = new System.Drawing.Point(6, 123);
             this.radioButton46.Name = "radioButton46";
-            this.radioButton46.Size = new System.Drawing.Size(49, 24);
+            this.radioButton46.Size = new System.Drawing.Size(51, 22);
             this.radioButton46.TabIndex = 8;
             this.radioButton46.Tag = "20,10";
             this.radioButton46.Text = "Evil";
@@ -1120,11 +1124,11 @@
             // 
             this.radioButton47.AutoSize = true;
             this.radioButton47.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton47.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton47.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton47.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton47.Location = new System.Drawing.Point(6, 102);
             this.radioButton47.Name = "radioButton47";
-            this.radioButton47.Size = new System.Drawing.Size(51, 24);
+            this.radioButton47.Size = new System.Drawing.Size(55, 22);
             this.radioButton47.TabIndex = 7;
             this.radioButton47.Tag = "10,5";
             this.radioButton47.Text = "Bad";
@@ -1133,10 +1137,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 16);
+            this.label10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 19);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 20);
+            this.label10.Size = new System.Drawing.Size(77, 17);
             this.label10.TabIndex = 1;
             this.label10.Text = "Feminism.";
             // 
@@ -1144,10 +1148,10 @@
             // 
             this.radioButton48.AutoSize = true;
             this.radioButton48.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton48.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton48.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton48.Location = new System.Drawing.Point(6, 81);
             this.radioButton48.Name = "radioButton48";
-            this.radioButton48.Size = new System.Drawing.Size(68, 24);
+            this.radioButton48.Size = new System.Drawing.Size(75, 22);
             this.radioButton48.TabIndex = 6;
             this.radioButton48.Tag = "0,0";
             this.radioButton48.Text = "Neutral";
@@ -1157,10 +1161,10 @@
             // 
             this.radioButton49.AutoSize = true;
             this.radioButton49.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton49.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton49.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton49.Location = new System.Drawing.Point(6, 39);
             this.radioButton49.Name = "radioButton49";
-            this.radioButton49.Size = new System.Drawing.Size(93, 24);
+            this.radioButton49.Size = new System.Drawing.Size(100, 22);
             this.radioButton49.TabIndex = 0;
             this.radioButton49.Tag = "-20,-5";
             this.radioButton49.Text = "Very Good";
@@ -1170,10 +1174,10 @@
             // 
             this.radioButton50.AutoSize = true;
             this.radioButton50.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton50.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton50.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton50.Location = new System.Drawing.Point(6, 60);
             this.radioButton50.Name = "radioButton50";
-            this.radioButton50.Size = new System.Drawing.Size(58, 24);
+            this.radioButton50.Size = new System.Drawing.Size(62, 22);
             this.radioButton50.TabIndex = 2;
             this.radioButton50.Tag = "-10,0";
             this.radioButton50.Text = "Okay";
@@ -1188,6 +1192,7 @@
             this.groupBox11.Controls.Add(this.radioButton58);
             this.groupBox11.Controls.Add(this.radioButton59);
             this.groupBox11.Controls.Add(this.radioButton60);
+            this.groupBox11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.Location = new System.Drawing.Point(3, 1186);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(233, 163);
@@ -1289,10 +1294,10 @@
             // 
             this.radioButton56.AutoSize = true;
             this.radioButton56.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton56.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton56.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton56.Location = new System.Drawing.Point(6, 123);
             this.radioButton56.Name = "radioButton56";
-            this.radioButton56.Size = new System.Drawing.Size(49, 24);
+            this.radioButton56.Size = new System.Drawing.Size(51, 22);
             this.radioButton56.TabIndex = 8;
             this.radioButton56.Tag = "10,-25";
             this.radioButton56.Text = "Evil";
@@ -1302,11 +1307,11 @@
             // 
             this.radioButton57.AutoSize = true;
             this.radioButton57.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton57.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton57.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton57.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton57.Location = new System.Drawing.Point(6, 102);
             this.radioButton57.Name = "radioButton57";
-            this.radioButton57.Size = new System.Drawing.Size(51, 24);
+            this.radioButton57.Size = new System.Drawing.Size(55, 22);
             this.radioButton57.TabIndex = 7;
             this.radioButton57.Tag = "10,-10";
             this.radioButton57.Text = "Bad";
@@ -1315,10 +1320,10 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 16);
+            this.label12.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 18);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 20);
+            this.label12.Size = new System.Drawing.Size(114, 17);
             this.label12.TabIndex = 1;
             this.label12.Text = "Free healthcare.";
             // 
@@ -1326,10 +1331,10 @@
             // 
             this.radioButton58.AutoSize = true;
             this.radioButton58.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton58.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton58.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton58.Location = new System.Drawing.Point(6, 81);
             this.radioButton58.Name = "radioButton58";
-            this.radioButton58.Size = new System.Drawing.Size(68, 24);
+            this.radioButton58.Size = new System.Drawing.Size(75, 22);
             this.radioButton58.TabIndex = 6;
             this.radioButton58.Tag = "0,0";
             this.radioButton58.Text = "Neutral";
@@ -1339,10 +1344,10 @@
             // 
             this.radioButton59.AutoSize = true;
             this.radioButton59.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton59.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton59.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton59.Location = new System.Drawing.Point(6, 39);
             this.radioButton59.Name = "radioButton59";
-            this.radioButton59.Size = new System.Drawing.Size(93, 24);
+            this.radioButton59.Size = new System.Drawing.Size(100, 22);
             this.radioButton59.TabIndex = 0;
             this.radioButton59.Tag = "-10,10";
             this.radioButton59.Text = "Very Good";
@@ -1352,10 +1357,10 @@
             // 
             this.radioButton60.AutoSize = true;
             this.radioButton60.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton60.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton60.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton60.Location = new System.Drawing.Point(6, 60);
             this.radioButton60.Name = "radioButton60";
-            this.radioButton60.Size = new System.Drawing.Size(58, 24);
+            this.radioButton60.Size = new System.Drawing.Size(62, 22);
             this.radioButton60.TabIndex = 2;
             this.radioButton60.Tag = "-5,5";
             this.radioButton60.Text = "Okay";
@@ -1370,6 +1375,7 @@
             this.groupBox13.Controls.Add(this.radioButton68);
             this.groupBox13.Controls.Add(this.radioButton69);
             this.groupBox13.Controls.Add(this.radioButton70);
+            this.groupBox13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(3, 1355);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(233, 163);
@@ -1471,10 +1477,10 @@
             // 
             this.radioButton66.AutoSize = true;
             this.radioButton66.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton66.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton66.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton66.Location = new System.Drawing.Point(6, 123);
             this.radioButton66.Name = "radioButton66";
-            this.radioButton66.Size = new System.Drawing.Size(49, 24);
+            this.radioButton66.Size = new System.Drawing.Size(51, 22);
             this.radioButton66.TabIndex = 8;
             this.radioButton66.Tag = "25,10";
             this.radioButton66.Text = "Evil";
@@ -1484,11 +1490,11 @@
             // 
             this.radioButton67.AutoSize = true;
             this.radioButton67.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton67.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton67.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton67.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton67.Location = new System.Drawing.Point(6, 102);
             this.radioButton67.Name = "radioButton67";
-            this.radioButton67.Size = new System.Drawing.Size(51, 24);
+            this.radioButton67.Size = new System.Drawing.Size(55, 22);
             this.radioButton67.TabIndex = 7;
             this.radioButton67.Tag = "15,10";
             this.radioButton67.Text = "Bad";
@@ -1497,10 +1503,10 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 16);
+            this.label14.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(6, 18);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(103, 20);
+            this.label14.Size = new System.Drawing.Size(109, 17);
             this.label14.TabIndex = 1;
             this.label14.Text = "Ethnic diversity.";
             // 
@@ -1508,10 +1514,10 @@
             // 
             this.radioButton68.AutoSize = true;
             this.radioButton68.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton68.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton68.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton68.Location = new System.Drawing.Point(6, 81);
             this.radioButton68.Name = "radioButton68";
-            this.radioButton68.Size = new System.Drawing.Size(68, 24);
+            this.radioButton68.Size = new System.Drawing.Size(75, 22);
             this.radioButton68.TabIndex = 6;
             this.radioButton68.Tag = "0,0";
             this.radioButton68.Text = "Neutral";
@@ -1521,10 +1527,10 @@
             // 
             this.radioButton69.AutoSize = true;
             this.radioButton69.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton69.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton69.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton69.Location = new System.Drawing.Point(6, 39);
             this.radioButton69.Name = "radioButton69";
-            this.radioButton69.Size = new System.Drawing.Size(93, 24);
+            this.radioButton69.Size = new System.Drawing.Size(100, 22);
             this.radioButton69.TabIndex = 0;
             this.radioButton69.Tag = "-20,-5";
             this.radioButton69.Text = "Very Good";
@@ -1534,10 +1540,10 @@
             // 
             this.radioButton70.AutoSize = true;
             this.radioButton70.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton70.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton70.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton70.Location = new System.Drawing.Point(6, 60);
             this.radioButton70.Name = "radioButton70";
-            this.radioButton70.Size = new System.Drawing.Size(58, 24);
+            this.radioButton70.Size = new System.Drawing.Size(62, 22);
             this.radioButton70.TabIndex = 2;
             this.radioButton70.Tag = "-10,0";
             this.radioButton70.Text = "Okay";
@@ -1553,6 +1559,7 @@
             this.groupBox15.Controls.Add(this.radioButton78);
             this.groupBox15.Controls.Add(this.radioButton79);
             this.groupBox15.Controls.Add(this.radioButton80);
+            this.groupBox15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox15.Location = new System.Drawing.Point(3, 1524);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(233, 163);
@@ -1835,10 +1842,10 @@
             // 
             this.radioButton76.AutoSize = true;
             this.radioButton76.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton76.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton76.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton76.Location = new System.Drawing.Point(6, 123);
             this.radioButton76.Name = "radioButton76";
-            this.radioButton76.Size = new System.Drawing.Size(49, 24);
+            this.radioButton76.Size = new System.Drawing.Size(51, 22);
             this.radioButton76.TabIndex = 8;
             this.radioButton76.Tag = "15,-25";
             this.radioButton76.Text = "Evil";
@@ -1848,11 +1855,11 @@
             // 
             this.radioButton77.AutoSize = true;
             this.radioButton77.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton77.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton77.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton77.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton77.Location = new System.Drawing.Point(6, 102);
             this.radioButton77.Name = "radioButton77";
-            this.radioButton77.Size = new System.Drawing.Size(51, 24);
+            this.radioButton77.Size = new System.Drawing.Size(55, 22);
             this.radioButton77.TabIndex = 7;
             this.radioButton77.Tag = "10,-15";
             this.radioButton77.Text = "Bad";
@@ -1861,10 +1868,10 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(6, 16);
+            this.label16.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(6, 19);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(81, 20);
+            this.label16.Size = new System.Drawing.Size(87, 17);
             this.label16.TabIndex = 1;
             this.label16.Text = "Gun control.";
             // 
@@ -1872,10 +1879,10 @@
             // 
             this.radioButton78.AutoSize = true;
             this.radioButton78.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton78.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton78.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton78.Location = new System.Drawing.Point(6, 81);
             this.radioButton78.Name = "radioButton78";
-            this.radioButton78.Size = new System.Drawing.Size(68, 24);
+            this.radioButton78.Size = new System.Drawing.Size(75, 22);
             this.radioButton78.TabIndex = 6;
             this.radioButton78.Tag = "0,0";
             this.radioButton78.Text = "Neutral";
@@ -1885,10 +1892,10 @@
             // 
             this.radioButton79.AutoSize = true;
             this.radioButton79.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton79.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton79.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton79.Location = new System.Drawing.Point(6, 39);
             this.radioButton79.Name = "radioButton79";
-            this.radioButton79.Size = new System.Drawing.Size(93, 24);
+            this.radioButton79.Size = new System.Drawing.Size(100, 22);
             this.radioButton79.TabIndex = 0;
             this.radioButton79.Tag = "-10,10";
             this.radioButton79.Text = "Very Good";
@@ -1898,10 +1905,10 @@
             // 
             this.radioButton80.AutoSize = true;
             this.radioButton80.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton80.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton80.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton80.Location = new System.Drawing.Point(6, 60);
             this.radioButton80.Name = "radioButton80";
-            this.radioButton80.Size = new System.Drawing.Size(58, 24);
+            this.radioButton80.Size = new System.Drawing.Size(62, 22);
             this.radioButton80.TabIndex = 2;
             this.radioButton80.Tag = "-5,5";
             this.radioButton80.Text = "Okay";
@@ -1916,6 +1923,7 @@
             this.groupBox19.Controls.Add(this.radioButton98);
             this.groupBox19.Controls.Add(this.radioButton99);
             this.groupBox19.Controls.Add(this.radioButton100);
+            this.groupBox19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox19.Location = new System.Drawing.Point(3, 1693);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Size = new System.Drawing.Size(233, 163);
@@ -2017,10 +2025,10 @@
             // 
             this.radioButton96.AutoSize = true;
             this.radioButton96.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton96.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton96.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton96.Location = new System.Drawing.Point(6, 123);
             this.radioButton96.Name = "radioButton96";
-            this.radioButton96.Size = new System.Drawing.Size(49, 24);
+            this.radioButton96.Size = new System.Drawing.Size(51, 22);
             this.radioButton96.TabIndex = 8;
             this.radioButton96.Tag = "10,5";
             this.radioButton96.Text = "Evil";
@@ -2030,11 +2038,11 @@
             // 
             this.radioButton97.AutoSize = true;
             this.radioButton97.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton97.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton97.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton97.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton97.Location = new System.Drawing.Point(6, 102);
             this.radioButton97.Name = "radioButton97";
-            this.radioButton97.Size = new System.Drawing.Size(51, 24);
+            this.radioButton97.Size = new System.Drawing.Size(55, 22);
             this.radioButton97.TabIndex = 7;
             this.radioButton97.Tag = "5,5";
             this.radioButton97.Text = "Bad";
@@ -2043,10 +2051,10 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(6, 16);
+            this.label20.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(7, 18);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(52, 20);
+            this.label20.Size = new System.Drawing.Size(54, 17);
             this.label20.TabIndex = 1;
             this.label20.Text = "Reddit.";
             // 
@@ -2054,10 +2062,10 @@
             // 
             this.radioButton98.AutoSize = true;
             this.radioButton98.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton98.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton98.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton98.Location = new System.Drawing.Point(6, 81);
             this.radioButton98.Name = "radioButton98";
-            this.radioButton98.Size = new System.Drawing.Size(68, 24);
+            this.radioButton98.Size = new System.Drawing.Size(75, 22);
             this.radioButton98.TabIndex = 6;
             this.radioButton98.Tag = "0,0";
             this.radioButton98.Text = "Neutral";
@@ -2067,10 +2075,10 @@
             // 
             this.radioButton99.AutoSize = true;
             this.radioButton99.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton99.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton99.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton99.Location = new System.Drawing.Point(6, 39);
             this.radioButton99.Name = "radioButton99";
-            this.radioButton99.Size = new System.Drawing.Size(93, 24);
+            this.radioButton99.Size = new System.Drawing.Size(100, 22);
             this.radioButton99.TabIndex = 0;
             this.radioButton99.Tag = "-10,5";
             this.radioButton99.Text = "Very Good";
@@ -2080,10 +2088,10 @@
             // 
             this.radioButton100.AutoSize = true;
             this.radioButton100.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton100.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton100.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton100.Location = new System.Drawing.Point(6, 60);
             this.radioButton100.Name = "radioButton100";
-            this.radioButton100.Size = new System.Drawing.Size(58, 24);
+            this.radioButton100.Size = new System.Drawing.Size(62, 22);
             this.radioButton100.TabIndex = 2;
             this.radioButton100.Tag = "-5,0";
             this.radioButton100.Text = "Okay";
@@ -2098,6 +2106,7 @@
             this.groupBox21.Controls.Add(this.radioButton108);
             this.groupBox21.Controls.Add(this.radioButton109);
             this.groupBox21.Controls.Add(this.radioButton110);
+            this.groupBox21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox21.Location = new System.Drawing.Point(3, 1862);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Size = new System.Drawing.Size(233, 163);
@@ -2199,10 +2208,10 @@
             // 
             this.radioButton106.AutoSize = true;
             this.radioButton106.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton106.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton106.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton106.Location = new System.Drawing.Point(6, 123);
             this.radioButton106.Name = "radioButton106";
-            this.radioButton106.Size = new System.Drawing.Size(49, 24);
+            this.radioButton106.Size = new System.Drawing.Size(51, 22);
             this.radioButton106.TabIndex = 8;
             this.radioButton106.Tag = "-10,-10";
             this.radioButton106.Text = "Evil";
@@ -2212,11 +2221,11 @@
             // 
             this.radioButton107.AutoSize = true;
             this.radioButton107.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton107.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton107.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton107.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radioButton107.Location = new System.Drawing.Point(6, 102);
             this.radioButton107.Name = "radioButton107";
-            this.radioButton107.Size = new System.Drawing.Size(51, 24);
+            this.radioButton107.Size = new System.Drawing.Size(55, 22);
             this.radioButton107.TabIndex = 7;
             this.radioButton107.Tag = "-5,-5";
             this.radioButton107.Text = "Bad";
@@ -2225,10 +2234,10 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(6, 16);
+            this.label22.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(6, 19);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(94, 20);
+            this.label22.Size = new System.Drawing.Size(100, 17);
             this.label22.TabIndex = 1;
             this.label22.Text = "Death penalty.";
             // 
@@ -2236,10 +2245,10 @@
             // 
             this.radioButton108.AutoSize = true;
             this.radioButton108.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton108.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton108.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton108.Location = new System.Drawing.Point(6, 81);
             this.radioButton108.Name = "radioButton108";
-            this.radioButton108.Size = new System.Drawing.Size(68, 24);
+            this.radioButton108.Size = new System.Drawing.Size(75, 22);
             this.radioButton108.TabIndex = 6;
             this.radioButton108.Tag = "5,-5";
             this.radioButton108.Text = "Neutral";
@@ -2249,10 +2258,10 @@
             // 
             this.radioButton109.AutoSize = true;
             this.radioButton109.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton109.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton109.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton109.Location = new System.Drawing.Point(6, 39);
             this.radioButton109.Name = "radioButton109";
-            this.radioButton109.Size = new System.Drawing.Size(93, 24);
+            this.radioButton109.Size = new System.Drawing.Size(100, 22);
             this.radioButton109.TabIndex = 0;
             this.radioButton109.Tag = "15,25";
             this.radioButton109.Text = "Very Good";
@@ -2262,10 +2271,10 @@
             // 
             this.radioButton110.AutoSize = true;
             this.radioButton110.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton110.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton110.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton110.Location = new System.Drawing.Point(6, 60);
             this.radioButton110.Name = "radioButton110";
-            this.radioButton110.Size = new System.Drawing.Size(58, 24);
+            this.radioButton110.Size = new System.Drawing.Size(62, 22);
             this.radioButton110.TabIndex = 2;
             this.radioButton110.Tag = "10,15";
             this.radioButton110.Text = "Okay";
@@ -2274,6 +2283,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(3, 2031);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 38);
@@ -2281,6 +2291,18 @@
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightGray;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(139, 2031);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 38);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Reset";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label23
             // 
@@ -2291,7 +2313,6 @@
             this.label23.Size = new System.Drawing.Size(41, 13);
             this.label23.TabIndex = 10;
             this.label23.Text = "<-- You";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // pictureBox2
             // 
@@ -2302,22 +2323,60 @@
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(544, 497);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(362, 9);
+            this.linkLabel1.TabIndex = 13;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://www.reddit.com/r/TriangleStrategy/comments/ss1l47/the_games_name_could_re" +
+    "fer_to_a_political/";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(471, 493);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(76, 14);
+            this.label24.TabIndex = 14;
+            this.label24.Text = "Image Source:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(84, 30);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(315, 29);
+            this.label25.TabIndex = 15;
+            this.label25.Text = "The Political Triangle Quiz";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1050, 541);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.userPolitics);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Political Triangle Test";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Tag = "";
+            this.Text = "Political Triangle Quiz";
             ((System.ComponentModel.ISupportInitialize)(this.userPolitics)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -2533,6 +2592,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
     }
 }
 
